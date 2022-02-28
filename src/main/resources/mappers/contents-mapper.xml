@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE mapper
+	  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ContentsMapper">
+	<resultMap type="Contents" id="contentsResultMap">
+		<id property="contentsNo" column="CONTENTS_NO" />
+		<result property="contentsType" column="CONTENTS_TYPE" />
+		<result property="contentsImg" column="CONTENTS_IMG" />
+		<result property="contentsTitle" column="CONTENTS_TITLE" />
+		<result property="contentsDetail" column="CONTENTS_DETAIL" />
+		<result property="contentsDay" column="CONTENTS_DAY" />
+		<result property="contentsViews" column="CONTENTS_VIEWS" />
+		<result property="contentsWriter" column="CONTENTS_WRITER" />
+		<result property="contentsEnd" column="CONTENTS_END"/>
+	</resultMap>
+
+	<select id="selectOneByNo" resultMap="contentsResultMap">
+		SELECT * FROM CONTENTS
+		WHERE CONTENTS_NO = #{contentsNo }
+	</select>
+	<select id="selectListCount" resultType="_int">
+		SELECT COUNT(*) FROM CONTENTS WHERE CONTENTS_TYPE = 'C' ORDER BY CONTENTS_NO
+	</select>
+	<select id="selectListCountS" resultType="_int">
+		SELECT COUNT(*) FROM CONTENTS WHERE CONTENTS_TYPE = 'S'
+	</select>
+	<select id="selectListCountT" resultType="_int">
+		SELECT COUNT(*) FROM CONTENTS WHERE CONTENTS_TYPE = 'T'
+	</select>
+	<select id="selectAllList" resultMap="contentsResultMap">
+		SELECT * FROM CONTENTS WHERE CONTENTS_TYPE = 'C'
+	</select>
+	<select id="selectAllListS" resultMap="contentsResultMap">
+		SELECT * FROM CONTENTS WHERE CONTENTS_TYPE = 'S'
+	</select>
+	<select id="selectAllListT" resultMap="contentsResultMap">
+		SELECT * FROM CONTENTS WHERE CONTENTS_TYPE = 'T'
+	</select>
+	<update id = "updateViews">
+		UPDATE CONTENTS SET CONTENTS_VIEWS = CONTENTS_VIEWS + 1 WHERE CONTENTS_NO = #{contentsNo }
+	</update>
+</mapper>

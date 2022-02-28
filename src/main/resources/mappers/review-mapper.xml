@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ReviewMapper">
+	<resultMap type="Review" id="reviewResultMap">
+		<id property="bookingNo" column="BOOKING_NO"/>
+		<result property="contentName" column="CONTENT_NAME"/>
+		<result property="reviewContent" column="REVIEW_CONTENT"/>
+		<result property="reviewDate" column="REVIEW_DATE"/>
+		<result property="userId" column="USER_ID"/>
+	</resultMap>
+	<select id="selectAllList" resultMap="reviewResultMap">
+		SELECT * FROM REVIEW ORDER BY BOOKING_NO ASC
+	</select>
+	<select id="selectListCount" resultType="_int">
+		SELECT COUNT(*) FROM REVIEW
+	</select>
+	<select id="selectOneByNo" resultMap="reviewResultMap">
+		SELECT * FROM REVIEW WHERE BOOKING_NO = #{bookingNo}
+	</select>
+	<insert id="insertReview" parameterType="Review">
+		INSERT INTO REVIEW VALUES(#{bookingNo}, #{contentName}, #{reviewContent}, DEFAULT, #{userId})
+	</insert>
+	<delete id="deleteReview" parameterType="Review">
+		DELETE FROM REVIEW WHERE BOOKING_NO = #{bookingNo}
+	</delete>
+	<update id="updateReview" parameterType="Review">
+		UPDATE REVIEW SET REVIEW_CONTENT = #{reviewContent} WHERE BOOKING_NO = #{bookingNo}
+	</update>
+</mapper>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="InterestMapper">
+	<resultMap type="Interest" id="interestResultMap">
+		<id property="boardNo" column="BOARD_NO"/>
+		<result property="contentNo" column="CONTENT_NO"/>
+		<result property="contentName" column="CONTENT_NAME"/>
+		<result property="userId" column="USER_ID"/>
+		<result property="iCreateDate" column="I_CREATE_DATE"/>
+	</resultMap>
+	<select id="selectListCount" resultType="_int">
+		SELECT COUNT(*) FROM INTEREST_HG
+	</select>
+	<select id="selectAllList" resultMap="interestResultMap">
+		SELECT * FROM INTEREST_HG ORDER BY BOARD_NO DESC
+	</select>
+	<insert id="insertInterest" parameterType="Interest">
+		INSERT INTO INTEREST_HG VALUES(SEQ_INTEREST_NO.NEXTVAL, #{contentNo}, #{contentName}, #{userId}, DEFAULT)
+	</insert>
+	<delete id="deleteInterest" parameterType="Interest">
+		DELETE FROM INTEREST_HG WHERE BOARD_NO = #{boardNo}
+	</delete>
+</mapper>

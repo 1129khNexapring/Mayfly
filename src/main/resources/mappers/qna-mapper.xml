@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="QnaMapper">
+	<resultMap type="Qna" id="qnaResultMap">
+		<id property="qnaNo" column="QNA_NO"/>
+		<result property="qnaTitle" column="QNA_TITLE"/>
+		<result property="qnaContent" column="QNA_CONTENT"/>
+		<result property="qnaWriter" column="QNA_WRITER"/>
+		<result property="qnaFilename" column="QNA_FILENAME"/>
+		<result property="qnaFileRename" column="QNA_FILERENAME"/>
+		<result property="qnaDate" column="QNA_DATE"/> 
+		<!-- <result property="qCreateDate" column="Q_CREATE_DATE"/>-->
+		<result property="qStatus" column="Q_STATUS"/>
+		<result property="answerContent" column="ANSWER_CONTENT"/>
+		<result property="answerWriter" column="ANSWER_WRITER"/>
+		<result property="answerDate" column="ANSWER_DATE"/>
+	</resultMap>
+	
+	<select id="selectListCount" resultType="_int"> 
+		SELECT COUNT(*) FROM QNA WHERE Q_STATUS = 'Y' 
+	</select>
+	<select id="selectAllList" resultMap="qnaResultMap">
+		SELECT * FROM QNA WHERE Q_STATUS = 'Y' ORDER BY QNA_NO DESC 
+	</select>
+	<select id="selectOneByNo" resultMap="qnaResultMap"> 
+		SELECT * FROM QNA WHERE QNA_NO = #{qnaNo } 
+	</select>
+	
+	<insert id="insertQna" parameterType="Qna"> 
+		INSERT INTO QNA VALUES(SEQ_QNA_NO.NEXTVAL, #{qnaTitle},#{qnaContent},#{qnaWriter}, DEFAULT, null, null, null, DEFAULT) 
+	</insert>
+	
+	<update id="updateQna" parameterType="Qna">
+		UPDATE QNA SET QNA_TITLE = #{qnaTitle }, QNA_CONTENT = #{qnaContent } WHERE QNA_NO = #{qnaNo } AND Q_STATUS ='Y'
+	</update>
+	
+	<delete id="deleteQna" parameterType="int">
+		DELETE FROM QNA WHERE QNA_NO = #{qnaNo}
+	</delete>
+
+
+<!-- 답변 -->	
+	<update id="answerQna" parameterType="Qna"> 
+		UPDATE QNA SET ANSWER_CONTENT = #{answerContent }, ANSWER_WRITER = 'admin', ANSWER_DATE = DEFAULT WHERE QNA_NO = #{qnaNo }
+	</update>
+	
+	<update id="updateAnswer" parameterType="Qna">
+		UPDATE QNA SET ANSWER_CONTENT = #{answerContent }, ANSWER_WRITER = 'admin', ANSWER_DATE = DEFAULT WHERE QNA_NO = #{qnaNo } AND Q_STATUS ='Y'
+	</update>
+	
+	<update id="deleteAnswer" parameterType="int">
+		UPDATE QNA SET ANSWER_CONTENT = NULL WHERE QNA_NO = #{qnaNo}
+	</update>
+	
+	
+</mapper>

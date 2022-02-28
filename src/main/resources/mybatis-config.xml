@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<setting name="jdbcTypeForNull" value="NULL" />
+		<!-- 만약에 NULL 데이터가 전달되었으면 빈칸이 아닌 NULL로 인식하도록 설정 -->
+	</settings>
+	<typeAliases>
+		<typeAlias type="org.oneday.mayfly.contents.domain.Contents"
+			alias="Contents" />
+			
+		<typeAlias alias="Board"
+			type="org.oneday.mayfly.board.domain.Board" />
+			
+		<typeAlias alias="Comments"
+			type="org.oneday.mayfly.comments.domain.Comments" />
+			
+		<typeAlias alias="Qna"
+			type="org.oneday.mayfly.qna.domain.Qna" />
+			
+		<typeAlias alias="Booking"
+			type="org.oneday.mayfly.booking.domain.Booking" />
+
+		<typeAlias alias="Review"
+			type="org.oneday.mayfly.review.domain.Review" />
+
+		<typeAlias alias="Interest"
+			type="org.oneday.mayfly.interest.domain.Interest" />
+	</typeAliases>
+	<mappers>
+		<mapper resource="mappers/contents-mapper.xml" />
+		<mapper resource="mappers/board-mapper.xml" />
+		<mapper resource="mappers/comments-mapper.xml" />
+		<mapper resource="mappers/qna-mapper.xml" />
+		<mapper resource="mappers/member-mapper.xml" />
+		<mapper resource="mappers/booking-mapper.xml" />
+		<mapper resource="mappers/interest-mapper.xml" />
+		<mapper resource="mappers/review-mapper.xml" />
+	</mappers>
+</configuration>
