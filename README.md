@@ -105,5 +105,6 @@
 <img src="https://user-images.githubusercontent.com/98369247/157787791-a7a30501-0f06-41af-bf23-5be26f4c69ba.png">
 
 2.유스케이스
-<img src="https://user-images.githubusercontent.com/90033066/157792085-25ae0663-18db-4375-8c8d-616fd93ff8b0.PNG")
+![회원](https://user-images.githubusercontent.com/90033066/157792085-25ae0663-18db-4375-8c8d-616fd93ff8b0.PNG)
+
 
