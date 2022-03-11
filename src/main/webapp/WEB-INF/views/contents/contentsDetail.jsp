@@ -67,20 +67,17 @@ text-align : center;
 	width: 298PX;
 	float : left;
 	height : 250px;
-	background-color : blue;
 }
 
 #midSrc{
 	width : 298PX;
 	float : left;
-	background-color : red;
 	height : 250px;
 	}
 	
 #rightSrc{
 	width : 298PX;
 	float : left;
-	background-color : blue;
 	height : 250px;
 }
 
