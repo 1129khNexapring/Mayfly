@@ -64,19 +64,19 @@ text-align : center;
 }
 
 #leftSrc{
-	width: 298PX;
+	width: 297PX;
 	float : left;
 	height : 250px;
 }
 
 #midSrc{
-	width : 298PX;
+	width : 297PX;
 	float : left;
 	height : 250px;
 	}
 	
 #rightSrc{
-	width : 298PX;
+	width : 297PX;
 	float : left;
 	height : 250px;
 }
