@@ -77,4 +77,7 @@
 
 + ### Q&A 
  
-
+--- 
+## Document
+1.ERD
+<img src="https://user-images.githubusercontent.com/98369247/157787791-a7a30501-0f06-41af-bf23-5be26f4c69ba.png">
