@@ -61,7 +61,27 @@ width :440px;
 height : 400px;
 text-align : center;
 
+}
 
+#leftSrc{
+	width: 298PX;
+	float : left;
+	height : 250px;
+	background-color : blue;
+}
+
+#midSrc{
+	width : 298PX;
+	float : left;
+	background-color : red;
+	height : 250px;
+	}
+	
+#rightSrc{
+	width : 298PX;
+	float : left;
+	background-color : blue;
+	height : 250px;
 }
 
 #viewsTable{
@@ -91,13 +111,15 @@ margin : 5px 0px;
 	border-right : none;
 	}
 
-
 #moreDetail{
 
 border-top : 2px solid #f4e1a9;
-
 height : 990px;
 text-align : center;
+}
+
+#moreImg{
+background-color : blue;
 }
 
  .dropbtn {
@@ -152,13 +174,11 @@ text-align : center;
    .dropdown:hover .dropdown-content {display: block;}
    
    .dropdown:hover .dropbtn {background-color: #f1f1f1;}
-   
-#moreImg{
-	width:900px;
 	
+.dImg{
+	height : 250px;
+	width : 298px;
 }
-
-	
 </style>
 </head>
 <script>
@@ -256,7 +276,15 @@ text-align : center;
 			</tr>
 			<tr>
 				<td colspan="2">
-					<div id="moreDetail"><img src="/resources/image/Z1.JPG" id="moreImg" ><img src="/resources/image/D1.jpg"></div>
+					<div id="moreDetail">
+						<div id="moreImg">
+							<div id="leftSrc"><img src="/resources/image/${contents.contentsImg1 }" class="dImg"></div>
+							<div id="midSrc"><img src="/resources/image/${contents.contentsImg2 }" class="dImg"></div>
+							<div id="rightSrc"><img src="/resources/image/${contents.contentsImg3 }" class="dImg"></div>
+						</div>
+						<div id="moreText">
+						</div>
+					</div>
 				</td>
 			</tr>
 		</table>

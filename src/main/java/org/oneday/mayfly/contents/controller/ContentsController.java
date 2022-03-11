@@ -21,6 +21,7 @@ public class ContentsController {
 	@Autowired
 	private ContentsService cService;
 	
+	//컨텐츠 리스트, ㅇㅇㅇ
 	@RequestMapping(value="/contents/list.mayfly", method=RequestMethod.GET)
 	public String contentsList(
 			Model model
@@ -35,7 +36,7 @@ public class ContentsController {
 			model.addAttribute("pi", pi);
 			return "contents/contentsList";
 		}else {
-			model.addAttribute("msg", "컨텐츠 전체조회 실패");
+			model.addAttribute("msg", "而⑦뀗痢� �쟾泥댁“�쉶 �떎�뙣");
 			return "common/errorPage";
 		}
 	}
@@ -51,7 +52,7 @@ public class ContentsController {
 			model.addAttribute("contents", contents);
 			return "contents/contentsDetail";
 		}else {
-			model.addAttribute("msg", "오류");
+			model.addAttribute("msg", "�삤瑜�");
 			return "common/errorPage";
 		}
 	}
@@ -69,7 +70,7 @@ public class ContentsController {
 			model.addAttribute("pi", pi);
 			return "contents/selfList";
 		}else {
-			model.addAttribute("msg", "컨텐츠 전체조회 실패");
+			model.addAttribute("msg", "而⑦뀗痢� �쟾泥댁“�쉶 �떎�뙣");
 			return "common/errorPage";
 		}
 	}
@@ -85,7 +86,7 @@ public class ContentsController {
 			model.addAttribute("contents", contents);
 			return "contents/selfDetail";
 		}else {
-			model.addAttribute("msg", "오류");
+			model.addAttribute("msg", "�삤瑜�");
 			return "common/errorPage";
 		}
 	}
@@ -103,7 +104,7 @@ public class ContentsController {
 			model.addAttribute("pi", pi);
 			return "contents/travelList";
 		}else {
-			model.addAttribute("msg", "컨텐츠 전체조회 실패");
+			model.addAttribute("msg", "而⑦뀗痢� �쟾泥댁“�쉶 �떎�뙣");
 			return "common/errorPage";
 		}
 	}
@@ -119,7 +120,7 @@ public class ContentsController {
 			model.addAttribute("contents", contents);
 			return "contents/travelDetail";
 		}else {
-			model.addAttribute("msg", "오류");
+			model.addAttribute("msg", "�삤瑜�");
 			return "common/errorPage";
 		}
 	}

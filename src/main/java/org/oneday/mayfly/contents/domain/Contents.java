@@ -6,6 +6,9 @@ public class Contents {
 	private int contentsNo;
 	private String contentsType;
 	private String contentsImg;
+	private String contentsImg1;
+	private String contentsImg2;
+	private String contentsImg3;
 	private String contentsTitle;
 	private String contentsDetail;
 	private Date contentsDay;
@@ -13,6 +16,30 @@ public class Contents {
 	private String contentsWriter;
 	private Date contentsEnd;
 	 
+
+	public String getContentsImg1() {
+		return contentsImg1;
+	}
+
+	public void setContentsImg1(String contentsImg1) {
+		this.contentsImg1 = contentsImg1;
+	}
+
+	public String getContentsImg2() {
+		return contentsImg2;
+	}
+
+	public void setContentsImg2(String contentsImg2) {
+		this.contentsImg2 = contentsImg2;
+	}
+
+	public String getContentsImg3() {
+		return contentsImg3;
+	}
+
+	public void setContentsImg3(String contentsImg3) {
+		this.contentsImg3 = contentsImg3;
+	}
 
 	public Date getContentsEnd() {
 		return contentsEnd;
@@ -91,6 +118,7 @@ public class Contents {
 	@Override
 	public String toString() {
 		return "Contents [contentsNo=" + contentsNo + ", contentsType=" + contentsType + ", contentsImg=" + contentsImg
+				+ ", contentsImg1=" + contentsImg1 + ", contentsImg2=" + contentsImg2 + ", contentsImg3=" + contentsImg3
 				+ ", contentsTitle=" + contentsTitle + ", contentsDetail=" + contentsDetail + ", contentsDay="
 				+ contentsDay + ", contentsViews=" + contentsViews + ", contentsWriter=" + contentsWriter
 				+ ", contentsEnd=" + contentsEnd + "]";

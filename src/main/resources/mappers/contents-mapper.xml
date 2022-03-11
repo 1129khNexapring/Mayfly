@@ -7,6 +7,9 @@
 		<id property="contentsNo" column="CONTENTS_NO" />
 		<result property="contentsType" column="CONTENTS_TYPE" />
 		<result property="contentsImg" column="CONTENTS_IMG" />
+		<result property="contentsImg1" column="CONTENTS_IMG1" />
+		<result property="contentsImg2" column="CONTENTS_IMG2" />
+		<result property="contentsImg3" column="CONTENTS_IMG3" />
 		<result property="contentsTitle" column="CONTENTS_TITLE" />
 		<result property="contentsDetail" column="CONTENTS_DETAIL" />
 		<result property="contentsDay" column="CONTENTS_DAY" />
