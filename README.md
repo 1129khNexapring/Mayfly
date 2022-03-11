@@ -112,6 +112,8 @@
 ---
 ![예약](https://user-images.githubusercontent.com/90033066/157792906-310a03b6-ea94-4099-be50-2f24e851294b.PNG)
 ---
+![커뮤니티](https://user-images.githubusercontent.com/90033066/157793718-a63f03be-50a7-42cd-9664-82e054265d16.PNG)
+
 
 
 
