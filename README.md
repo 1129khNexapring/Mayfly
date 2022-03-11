@@ -64,10 +64,14 @@
 + ### 회원가입 
 
 + ### 메인 
+<img width="850" src="https://user-images.githubusercontent.com/98369247/157790087-c5d537cb-0343-4dd4-9fbd-0d3dd25a0ac1.png">
 
 + ### 상세보기 
+<img width="850" src="https://user-images.githubusercontent.com/98369247/157790151-053c9c18-cfb5-4321-9a41-a2abcea9b9a9.png">
 
 + ### 예약 
+<img width="850" src="https://user-images.githubusercontent.com/98369247/157790196-02704d2c-9c03-48c6-bcfd-770fb8ec2a76.png">
+<img width="850" src="https://user-images.githubusercontent.com/98369247/157790262-bba4112c-72da-4c50-9a79-a825e1263fcb.png">
 
 + ### 예약목록
 
