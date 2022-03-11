@@ -89,9 +89,15 @@
 
 + ### 마이페이지
 
-+ ### 커뮤니티
++ ### 자유게시판
+<img whdth="850" src="https://user-images.githubusercontent.com/98369247/157791417-b06606d8-4250-40b5-9234-40971bb28697.png">
+<img whdth="850" src="https://user-images.githubusercontent.com/98369247/157791457-82c042b7-b931-4b27-a82b-b7c8cfd64297.png">
 
 + ### Q&A 
+<img whdth="850" src="https://user-images.githubusercontent.com/98369247/157791598-b8db2aeb-6c20-46b1-9cd1-9d8c607ba4fb.png">
+<img whdth="850" src="https://user-images.githubusercontent.com/98369247/157791570-77962a13-5168-46e2-b86f-2076ee533a35.png">
+
+ 
  
 --- 
 ## Document
