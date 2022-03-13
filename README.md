@@ -82,8 +82,10 @@
 ## 주요기능
 
 + ### 로그인 
+<img width="850" src="https://user-images.githubusercontent.com/98369247/158084460-ee50940c-9d76-4f58-8173-c4523a029254.png">
 
-+ ### 회원가입 
++ ### 회원가입
+<img width="850" src="https://user-images.githubusercontent.com/98369247/158084458-4d237d19-14e4-49a5-9cf4-b8ba2230e714.png"> 
 
 + ### 메인 
 <img width="850" src="https://user-images.githubusercontent.com/98369247/157790087-c5d537cb-0343-4dd4-9fbd-0d3dd25a0ac1.png">
@@ -96,8 +98,16 @@
 <img width="850" src="https://user-images.githubusercontent.com/98369247/157790262-bba4112c-72da-4c50-9a79-a825e1263fcb.png">
 
 + ### 예약목록
+<img width="850" src="https://user-images.githubusercontent.com/98369247/158084452-4cd57f46-1047-47d5-b8a3-4ea8cd47bdd9.png">
+
++ ### 리뷰
+<img width="850" src="https://user-images.githubusercontent.com/98369247/158084446-3f100d4f-51e0-49a6-a3b2-ec67b86014d3.png">
 
 + ### 마이페이지
+<img width="850" src="https://user-images.githubusercontent.com/98369247/158084455-3133e8c2-ca56-454a-b922-be94dacd3fc0.png">
+
++ ### 관심목록
+<img width="850" src="https://user-images.githubusercontent.com/98369247/158084453-f3e357ba-b0da-4041-96cd-d797637fdb38.png">
 
 + ### 자유게시판
 <img whdth="850" src="https://user-images.githubusercontent.com/98369247/157791417-b06606d8-4250-40b5-9234-40971bb28697.png">
